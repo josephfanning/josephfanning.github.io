@@ -1,0 +1,223 @@
+
+
+
+header {
+  align-items: center; 
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  background-color: floralwhite;
+  margin-top: 10px; 
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  height: flex;
+}
+
+/* relates to the title of all pages, offers consistency for all pages  */
+#header_title {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  /* the padding levels the h1 element by 51px because the menu is 41px + the 10px margin */
+  padding-right: 51px;
+  color: black;
+  text-decoration: none;
+}
+
+/* need to play around with this to get a nice colour gradient */
+/* involves a basic colour gradient to stylistically improve site */
+html{
+  background: linear-gradient(to top, #11998e, #38ef7d);
+}
+
+/* section tag used to box specific parts of text and imaging that are related to eachother */
+section {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-clip: padding-box; /* This ensures the background gradient extends to the border */
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+/* the main div to be used for most pages involviing text (refer to main.html for an example). used to offer further consistency */
+/* to be used for subtitles and things outside of the main element (the main element has the same properties applied to .div_body) */
+.div_body {
+  background-color: floralwhite;
+  margin-top: 10px; 
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  height: flex;
+}
+
+footer {
+  background-color: floralwhite;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* CSS styling for different text elements */
+
+h1, h2, h3, p, li, footer, label, input, button, .drawer{
+  font-family: arial;
+
+}
+
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+
+}
+
+li {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* CSS styling for the sliding nav bar function */
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: floralwhite;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  left: 0;
+  font-weight: bold;
+}
+
+/* manipulates the text in the nav bar drawer */
+.drawer a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Change the color of links when hovering over hrefs in the nav bar */
+.drawer a:hover { 
+  color: #0AA851;
+}
+
+/* affects the nav bar drawers close button */
+.drawer .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* refers to nav bar button (refer to main.html on top left of page for example) */
+.drawer-btn {
+  font-size: 36px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-flex;
+}
+
+/* used in earlyHistory.html for image styling */
+.image-Container1, .image-Container2, .image-Container3, .image-Container4, .image-Container5 {
+  display: flex;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  height: 350px;
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* used in earlyHistory.html for text styling */
+.text-Container1, .text-Container2, .text-Container3, .text-Container4, .text-Container5 {
+  position: flex;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1.0s ease;
+  left: 650px;
+  /* margins are so high to be able to center the text properly within the sections with relation to the images */
+  margin-right: 200px;
+  margin-left: 400px;
+}
+/* used in earlyHistory.html for text styling to fade in text */
+.fade-in {
+  opacity: 1;
+}
+
+/* animation for the different pages to fade in */
+.nav-fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+/* animation for the different pages to fade in */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* quiz styling as shown on celticQuiz.html */
+
+form, label, input{
+  margin-left: 10px;
+}
+
+#question, #answers, #total-score, #pre-Quiz{
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#question, #total-score, #pre-Quiz{
+  font-size: 30px;
+}
+
+.quiz-button{
+  width: 60px;
+  height: 35px;
+  background-color: darkgrey;
+  cursor: pointer;
+  font-family: Arial;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+/* Code for clubTimeline.html */
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="CWStyle.css">
+
+        <script src="script.js"></script>
+
+        <meta charset='UTF-8'/> </meta>
+        
+        <!-- Title that shows up on the nav bar -->
+        <title> Celtic Watch </title>
+    </head>
+        
+
+    <header>
+
+                <!-- Need to find out how to to actions and properly open up a nav bar from left to left middle-->
+                <!-- currenlty doesnt work but you get the idea!-->
+                
+                <div class="drawer" id="myDrawer">
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()">&times;</a>
+                    <a href="main.html">Home</a>
+                    <a href="earlyHistory.html">Early History</a>
+                    <a href="celticQuiz.html">Celtic Quiz</a>
+                    <a href="clubTimeline.html">Club Timeline</a>
+                    <a href="teamTracker.html">Team Tracker</a>
+                </div>
+
+                <span class="drawer-btn" onclick="openDrawer()">
+                    <img src="images&text/menu-ivon.drawio.svg" alt="menu-icon">
+                </span>
+                
+                <!-- Title that actually shows up on page -->
+                <h1 id="header_title"> Early History </h1> 
+    </header>
+    
+    <body>
+
+        <!-- subtitle explaining context of website -->
+        <div class="div_body">
+
+            <h2> Early History of Celtic Football Club</h2>
+                
+            <p> Below is a selection of photos in relation to some key pieces of history relating to Celtic FC </p>
+            <p> <i> Click the images to learn about the early history  </i> </p>  
+               
+        </div>
+
+    
+        <main>
+                <!-- need to come back to this to make sure that the images line up side by side. taking up too much time currently-->
+                <!-- Need to make the images go in a line with images on the left and text o nthe right-->
+                <section>
+
+                    <div class="image-Container1">
+                        <img src="images&text/StMarysChapel-img1.jpeg" alt="St Mary's Chapel, Calton street, Glasgow" onclick="fadeInText('textContainer1')"> </div> 
+                        <div class="text-Container1" id="textContainer1">  
+                            <p> Andrew Kerins, better known as Brother Walfrid, called for a meeting on November 6, 1887,
+                            to establish a football team for the local area of the east end of Glasgow with the aim of raising funds for its struggling Irish families.
+                            In a small back room in <a href="https://saintmarycalton.org.uk"> St Mary's Church hall </a>on Forbes street, 
+                            those assembled there under Brother Walfrid's orders established a new football club for Glasgow. </p>
+                    </div> 
+                </section>
+
+                <section> 
+                    <div class="image-Container2">
+                        <img src="images&text/1888teamphoto.jpeg" alt="first team photo" onclick="fadeInText('textContainer2')"> </div>
+                        <div class="text-Container2" id="textContainer2">
+                            <p> On Monday, 28 May 1888, Celtic Football Club played its first-ever match, facing Glasgow outfit Rangers in a friendly. 
+                            As Celtic were still in the process of securing a team for the new season 
+                            - players' contracts were renewed annually in those days 
+                            - the home side comprised of players still contracted to other clubs, including both Renton and Hibernian.  </p>
+                    </div>
+                </section>
+
+                <section>
+                <div class="image-Container3">
+                        <img src="images&text/D3Ioi7UX0AAuyPB-2005857156.jpg" alt="Willie Maley" onclick="fadeInText3()"> </div>
+                        <div class="text-Container3" id="textContainer3">
+                            <p> In 1897 the club directors decided to bring Celtic in line with the developing professional game and they appointed a full-time team manager. 
+                                They appointed 29-year-old Newry-born Willie Maley who guided Celtic to a league title in his first year in charge. 
+                                Maley would manage Celtic for 43 years and lead them to 30 major trophies. 
+                                Before the appointment of Willie Maley, Celtic would buy players from other clubs. 
+                                It drained the club's finances and did not reflect on the community foundations of Celtic. 
+                                Maley decided to recruit players from nearby schools and streets. 
+                                An established club academy made sure that a parish sense of pride strung out through the team and its fans.
+                                <b> Willie Maley is often known for his popular quote: My love for Celtic has been a craze. Without it my existence would be empty indeed. </b>  </p>
+                    </div>
+                </section> 
+
+                <section>
+                    <div class="image-Container4">
+                        <img src="images&text/brake-club.jpeg" alt="Celtic Brake Club" onclick="fadeInText4()"> </div>
+                        <div class="text-Container4" id="textContainer4">
+                            <p> In the early days of Celtic football,
+                                fans of the club from different streets in Glasgow would travel to games on large horse-drawn brakes and they became known as <a href="https://www.thecelticwiki.com/legends-and-supporters/brake-clubs/"> <b> Brake Clubs.</b></a> 
+                                They would carry big banners proclaiming their street or parish, along with a picture or name of a player from that area. 
+                                This tradition continued on when the automobile replaced the horse and fans packed into buses with flags, banners, flutes, and bugles! 
+                                They were usually heard before they were seen! </p>
+                        </div>         
+                </section>
+
+                <section> 
+                    <div class="image-Container5">
+                        <img src="images&text/recordCrowds2.jpeg" alt="1937 Scottish Cup Final Vs Aberdeen" onclick="fadeInText5()"> </div>
+                        <div class="text-Container5" id="textContainer5">
+                            <p> It was Aberdeen's first Scottish Cup final and the black and golds were well supported (before they played in red), 
+                                but it was Celtic with goals from Johnny Crum and Willie Buchan who won the day. 
+                                The crowd was given as 147,365 but in fact there were a lot more than that at Hampden to see Celtic beat Aberdeen 2-1 
+                                to win the Cup for the 15th time on this day, 24 April 1937. This was a European club record for the highest attendance 
+                                ever at a football match. This marks the most attended Celtic match ever. A close second was a 1938 Scottish league game played against Rangers FC at Celtic's home ground; <a href="https://en.wikipedia.org/wiki/Celtic_Park">Celtic Park</a></p>
+                        </div>
+                </section>
+
+        </main>
+
+        <footer>
+                <p> &copy; 2024. All Rights Reserved. </p>
+                <p> Contact me! - 40593072@live.napier.ac.uk</p>
+        </footer>
+
+
+    </body>
