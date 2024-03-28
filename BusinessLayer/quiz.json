@@ -1,0 +1,116 @@
+{
+
+  "name" : "quiz",
+  "questions" : [
+    {
+    "id": "Q1",
+    "text": "What year was Celtic FC founded?",
+    "options": [
+      "1888",
+      "1896",
+      "1908",
+      "1886"
+    ],
+    "answer": "1888"
+    },
+    {
+      "id": "Q2",
+      "text": "What was the founders profession at the time of foudning Celtic FC?",
+      "options": [
+        "A shoemaker",
+        "A bricklayer",
+        "A priest",
+        "A baker"
+      ],
+      "answer": "A Baker"
+    },
+    {
+      "id": "Q3",
+      "text": "What age was Willie Maley when he was appointed as manager in 1897?",
+      "options": [
+        "31",
+        "29",
+        "28",
+        "26"
+      ],
+      "answer": "29"
+    },
+    {
+      "id": "Q4",
+      "text": "In what year did Celtic win their first scottish cup title?",
+      "options": [
+        "1894",
+        "1990",
+        "1911",
+        "1891"
+      ],
+      "answer": "1891"
+    },
+    {
+      "id": "Q5",
+      "text": "When did Celtic win the European Cup title?",
+      "options": [
+        "1977",
+        "1975",
+        "1970",
+        "1967"
+      ],
+      "answer": "1967"
+    },
+    {
+      "id": "Q6",
+      "text": "In what country was Celtic's first erupoean title cup played in?",
+      "options": [
+        "Spain",
+        "France",
+        "Portugal",
+        "Germany"
+      ],
+      "answer": "Portugal"
+    },
+    {
+      "id": "Q7",
+      "text": "What's the name of Celtic's mascot? before 2010?",
+      "options": [
+        "Hoopy",
+        "Freddie",
+        "Buggsy",
+        "Hailey"
+      ],
+      "answer": "Hoopy"
+    },
+    {
+      "id": "Q8",
+      "text": "Celtic hold the record for the longest unbeaten run in UK domestic professional football. How many games did it last?",
+      "options": [
+        "69",
+        "49",
+        "102",
+        "104"
+      ],
+      "answer": "69"
+    },
+    {
+      "id": "Q9",
+      "text": "Henrik Larsson played 221 times for Celtic between 1997 and 2004, how many goals did he score?",
+      "options": [
+        "81",
+        "221",
+        "151",
+        "175"
+      ],
+      "answer": "175"
+    },
+    {
+      "id": "Q10",
+      "text": "Which of these is NOT a Celtic FC nickname?",
+      "options": [
+        "The Bhoys",
+        "The Hoops",
+        "The Tics",
+        "The Celts"
+      ],
+      "answer": "The Tics"
+    }
+  ]
+}
