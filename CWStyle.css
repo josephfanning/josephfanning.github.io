@@ -16,7 +16,6 @@ main {
   margin-bottom: 15px;
   padding-top: 5px;
   padding-bottom: 10px;
-  height: flex;
 }
 
 /* relates to the title of all pages, offers consistency for all pages  */
@@ -36,7 +35,7 @@ html{
   background: linear-gradient(to top, #11998e, #38ef7d);
 }
 
-/* section tag used to box specific parts of text and imaging that are related to eachother */
+/* section tag used to box specific parts of text and imaging that are related to each other */
 section {
   border: 2px solid black;
   padding: 10px;
@@ -48,7 +47,7 @@ section {
 
 
 
-/* the main div to be used for most pages involviing text (refer to main.html for an example). used to offer further consistency */
+/* the main div to be used for most pages involving text (refer to main.html for an example). used to offer further consistency */
 /* to be used for subtitles and things outside of the main element (the main element has the same properties applied to .div_body) */
 .div_body {
   background-color: floralwhite;
@@ -56,7 +55,6 @@ section {
   margin-bottom: 15px;
   padding-top: 5px;
   padding-bottom: 10px;
-  height: flex;
 }
 
 footer {
@@ -110,7 +108,6 @@ li {
   overflow-x: hidden;
   transition: 0.4s;
   padding-top: 60px;
-  left: 0;
   font-weight: bold;
 }
 
@@ -161,8 +158,6 @@ li {
 
 /* used in earlyHistory.html for text styling */
 .text-Container1, .text-Container2, .text-Container3, .text-Container4, .text-Container5 {
-  position: flex;
-  display: flex;
   align-items: center;
   opacity: 0;
   transition: opacity 1.0s ease;
