@@ -69,7 +69,7 @@ footer {
 
 /* CSS styling for different text elements */
 
-h1, h2, h3, p, li, footer, label, input, button, .drawer{
+h1, h2, h3, p, li, footer, label, input, button, .drawer, ul, li{
   font-family: arial;
 
 }
