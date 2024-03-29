@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const quizContainer = document.getElementById('quizContainer');
 
     // Fetch the quiz data from the JSON file
-    fetch('quiz.json')
+    fetch('BusinessLayer/quiz.json')
         .then(response => response.json())
         .then(data => {
             // Display the quiz name
