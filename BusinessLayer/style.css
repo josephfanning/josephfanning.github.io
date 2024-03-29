@@ -190,26 +190,45 @@ form, label, input{
   margin-left: 10px;
 }
 
-#question, #answers, #total-score, #pre-Quiz{
-  margin-left: 15px;
-  margin-bottom: 20px;
-  font-family: Arial;
-  font-size: 20px;
+/* Style the quiz container */
+#quizContainer {
+  
 }
 
-#question, #total-score, #pre-Quiz{
-  font-size: 30px;
+/* Style individual questions */
+.question {
+  
 }
 
-.quiz-button{
-  width: 60px;
-  height: 35px;
-  background-color: darkgrey;
-  cursor: pointer;
-  font-family: Arial;
-  margin-left: 15px;
-  font-size: 20px;
+/* Style question number */
+.question h2 {
+  
 }
+
+/* Style question text */
+.question p {
+  
+}
+
+/* Style options list */
+.question ul {
+  
+}
+
+/* Style option labels */
+.question label {
+  
+}
+
+/* Style submit button */
+.question button {
+  
+}
+
+
+
+
+
 
 /* Code for clubTimeline.html */
 
