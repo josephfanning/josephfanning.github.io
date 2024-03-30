@@ -1,8 +1,8 @@
 // LOCATION OF SCRIPTS:
 // • nav bar - line 6
 // • earlyHistory.html - line 20
-// • CelticQuiz.html - line 57
-// • clubTimeline.html - line 229
+// • CelticQuiz.html - line 56
+
 
 // Functions for the nav bar start here 
 function openDrawer() { 
@@ -18,6 +18,7 @@ function closeDrawer() {
   });
 
 // Functions for the earlyHistory.html page starts here 
+// five simple functions to get text to fade into existance. uses element id's to get the text
 function fadeInText(textContainer1) {
     var textContainer1 = document.getElementById('textContainer1');
     textContainer1.classList.add('fade-in');

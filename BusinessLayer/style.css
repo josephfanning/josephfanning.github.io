@@ -186,9 +186,6 @@ li {
 
 /* quiz styling as shown on celticQuiz.html */
 
-form, label, input{
-  margin-left: 10px;
-}
 
 /* Style the quiz container */
 #quizContainer {
@@ -197,7 +194,7 @@ form, label, input{
 
 /* Style individual questions */
 .question {
-  
+  text-align: center;
 }
 
 /* Style question number */
@@ -207,7 +204,7 @@ form, label, input{
 
 /* Style question text */
 .question p {
-  
+  text-align: center;
 }
 
 /* Style options list */
@@ -217,12 +214,22 @@ form, label, input{
 
 /* Style option labels */
 .question label {
-  
+  margin: 10px 10px;
+  font-size: 24px;
 }
 
 /* Style submit button */
 .question button {
-  
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.question button:hover {
+  background-color: grey;
 }
 
 
