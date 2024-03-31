@@ -18,7 +18,7 @@ function closeDrawer() {
   });
 
 // Functions for the earlyHistory.html page starts here 
-// five simple functions to get text to fade into existance. uses element id's to get the text
+// five simple functions to get text to fade into existence. uses element id's to get the text
 function fadeInText(textContainer1) {
     var textContainer1 = document.getElementById('textContainer1');
     textContainer1.classList.add('fade-in');
@@ -47,7 +47,7 @@ function fadeInText5(textContainer5) {
      // function for one singular fade in text - cant currently get it working 
 //
 // function fadeInText(id) {
-// var textContaainer = document.getElementById(id);
+// var textContainer = document.getElementById(id);
 //  textContainer.classList.add('fade-in');
 //}
 //
@@ -108,7 +108,7 @@ function submitAnswer() {
 
 // function to display the user's score
 function displayScore() {
-    // initialises another new const data type variab;e 
+    // initialises another new const data type variable 
     const scoreDiv = document.createElement('div');
     // once again uses string templates to present the score and the total answers correct
     scoreDiv.innerHTML = `
@@ -137,3 +137,31 @@ document.addEventListener("DOMContentLoaded", function() {
         // gives a console log error if the there are any errors loading the quiz
         .catch(error => console.error('Error loading quiz:', error));
 });
+
+// code for the celticQuiz.html ends here
+
+// SPORTMONKS API TOKEN = 7JhF8KOqYpyKN9we7vIo4amJFEzoOAplJ6adHw1jneFh3UjODDo6wTKBfA6w
+
+// Define the endpoint URL
+var url = 'https://api.sportmonks.com/v3/football?api_token=7JhF8KOqYpyKN9we7vIo4amJFEzoOAplJ6adHw1jneFh3UjODDo6wTKBfA6w';
+
+// Make a GET request using fetch
+fetch(url)
+    .then(response => {
+        // Check if the response was successful (status code 200)
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        // Parse JSON response
+        return response.json();
+    })
+    .then(data => {
+        // Process the data...
+        console.log(data); // Just logging the data for demonstration
+        // Display data on the webpage
+        var dataContainer = document.getElementById('data');
+        dataContainer.innerText = JSON.stringify(data, null, 2);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
