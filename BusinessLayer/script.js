@@ -68,8 +68,8 @@ const questionsData = [];
 function displayQuestion() {
     // initialises two constants and sets them to different 
     const currentQuestionData = questionsData[currentQuestionIndex];
-    const questionDiv = document.createElement('div');
-    questionDiv.classList.add('question');
+    const questionDiv = document.createElement("div");
+    questionDiv.classList.add("question");
     // uses template strings to display different elements throughout the questionDiv div
     questionDiv.innerHTML = `
         <h2>Question ${currentQuestionIndex + 1}</h2>
@@ -83,7 +83,7 @@ function displayQuestion() {
         </form>
     `;
     // clears previous question
-    quizContainer.innerHTML = '';
+    quizContainer.innerHTML = "";
     quizContainer.appendChild(questionDiv);
 }
 
@@ -110,14 +110,14 @@ function submitAnswer() {
 // function to display the user's score
 function displayScore() {
     // initialises another new const data type variable 
-    const scoreDiv = document.createElement('div');
+    const scoreDiv = document.createElement("div");
     // once again uses string templates to present the score and the total answers correct
     scoreDiv.innerHTML = `
         <h2>Your Score</h2>
         <p>Total correct answers: ${totalScore} out of ${questionsData.length}</p>
     `;
     // clears the previous content (previous quiz)
-    quizContainer.innerHTML = '';
+    quizContainer.innerHTML = "";
     // shows the scoreDiv (basically a div that uses string templates to show the users final score and how many questions they got right)
     quizContainer.appendChild(scoreDiv);
 }
@@ -125,9 +125,9 @@ function displayScore() {
 // fetches the data from the quiz file
 document.addEventListener("DOMContentLoaded", function () {
     // initialises a const data type and sets it to the quizContainer div by using its id
-    const quizContainer = document.getElementById('quizContainer');
+    const quizContainer = document.getElementById("quizContainer");
 
-    fetch('BusinessLayer/quiz.json')
+    fetch("BusinessLayer/quiz.json")
         .then(response => response.json())
         .then(data => {
             // stores the questions in questionData
@@ -140,26 +140,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // code for the celticQuiz.html ends here
-
-// SPORTMONKS API TOKEN = 7JhF8KOqYpyKN9we7vIo4amJFEzoOAplJ6adHw1jneFh3UjODDo6wTKBfA6w
-
-// CORS ISSUE.... DOESNT WORK :(
-fetch('https://api.sportmonks.com/v3/football/fixtures?api_token=7JhF8KOqYpyKN9we7vIo4amJFEzoOAplJ6adHw1jneFh3UjODDo6wTKBfA6w', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    }
-})
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
