@@ -1,2 +1,257 @@
 {
+  "kits": [
+    {
+      "image": "DataLayer/23:24-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/23:23-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/23:24-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/22:23-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/22:23-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/22:23-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/21:22-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/21:22-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/21:22-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/20:21-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/20:21-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/20:21-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/19:20-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/19:20-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/19:20-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/18:19-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/18:19-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/18:19-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/17:18-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/17:18-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/17:18-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/16:17-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/16:17-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/16:17-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/15:16-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/15:16-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/15:16-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/14:15-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/14:15-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/14:15-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/13:14-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/13:14-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/13:14-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/12:13-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/12:13-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/12:13-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/11:12-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/11:12-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/11:12-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/10:11-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/10:11-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/10:11-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/09:10-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/09:10-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/09:10-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/08:09-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/08:09-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/08:09-GKkit.jpeg",
+      "description": "Goalkeeper Kit. There was no third kit in the 08/09 season."
+    },
+    {
+      "image": "DataLayer/07:08-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/07:08-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/07:08-CLkit.jpeg",
+      "description": "Kit produced for Celtic FC' champions league games during the 07/08 season."
+    },
+    {
+      "image": "DataLayer/06:07-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/06:07-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/06:07-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/05:06-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/05:06-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/05:06-thirdkit.jpeg",
+      "description": "Third Kit"
+    },
+    {
+      "image": "DataLayer/04:05-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/04:05-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/04:05-GKkit.jpeg",
+      "description": "Goalkeepers Kit. There was so third kit during the 04/05 season."
+    },
+    {
+      "image": "DataLayer/03:04-homekit.jpeg",
+      "description": "Home Kit."
+    },
+    {
+      "image": "DataLayer/03:04-awaykit.jpeg",
+      "description": "Away Kit."
+    },
+    {
+      "image": "DataLayer/03:04-thirdkit.jpeg",
+      "description": "Third Kit"
+    }
+  ]
 }
+
