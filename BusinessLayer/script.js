@@ -198,28 +198,49 @@ function showSlides(n) {
 
 
 
+                            // Screwed up API code below (ask in labs for help)
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const apiUrl = "https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=Scotland&s=Soccer";
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Update the DOM with the fetched data
+            displayLeagueInfo(data);
+        })
+        .catch(error => {
+            console.error("There was a problem with the fetch operation:", error);
+        });
+
+    // Function to display league info in the DOM
+    function displayLeagueInfo(data) {
+        const leagueData = data.leagues; // Assuming the data structure contains an array of leagues
+
+        // Select the element where you want to display the data
+        const dataContainer = document.getElementById('data');
+
+        // Create HTML elements to display the league info
+        const heading = document.createElement('h3');
+        heading.textContent = "Football Leagues in Scotland";
+
+        const list = document.createElement('ul');
+        leagueData.forEach(league => {
+            const listItem = document.createElement('li');
+            listItem.textContent = league.strLeague; // Assuming league object has a property for league name
+            list.appendChild(listItem);
+        });
+
+        // Append the elements to the data container
+        dataContainer.appendChild(heading);
+        dataContainer.appendChild(list);
+    }
+});
 
 
-
-// code for index.html slideshow ends here 
-
-// Screwed up API code below (ask in labs for help)
-
-const apiUrl = "www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c=Scotland&s=Soccer";
-
-fetch(apiUrl)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("Network response was not ok");
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log("country info:", countries);
-        // Use the fetched data here
-    })
-    .catch(error => {
-        console.error("There was a problem with the fetch operation:", error);
-    });

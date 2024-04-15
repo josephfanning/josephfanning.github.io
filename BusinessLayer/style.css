@@ -42,8 +42,6 @@ section {
   align-items: flex-start;
 }
 
-
-
 /* the main div to be used for most pages involving text (refer to main.html for an example). used to offer further consistency */
 /* to be used for subtitles and things outside of the main element (the main element has the same properties applied to .div_body) */
 .div_body {
@@ -53,7 +51,7 @@ section {
   padding-top: 5px;
   padding-bottom: 10px;
 }
-
+/* footer used to display misc information. */
 footer {
   background-color: floralwhite;
   margin-top: 10px; 
@@ -66,7 +64,6 @@ footer {
 
 h1, h2, h3, p, li, footer, label, input, button, .drawer, ul, li{
   font-family: arial;
-
 }
 
 
