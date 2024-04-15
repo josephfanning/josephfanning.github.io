@@ -323,3 +323,30 @@ li {
   float: right;
   padding-left: 30px;
 }
+
+                                          /* KIT HISTORY PAGE CSS*/
+
+/* Style for kit year */
+.kit-year {
+  margin-left: 20px;
+  display: block;
+}
+
+/* Style for kit images */
+.kit-images {
+  width: 250px;
+  height: 200px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 50px;
+  display: block;
+}
+
+/* Style for kit description */
+.kit-desc {
+  clear: right; /* Clears the float so the text appears below the images */
+  text-align: center;
+  margin-right: 130px;
+  display: inline-flex;
+
+}
