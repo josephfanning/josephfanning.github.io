@@ -1,5 +1,5 @@
 // LOCATION OF SCRIPTS:
-// • nav bar - line 6
+// • nav bar - line 7
 // • earlyHistory.html - line 20
 // • CelticQuiz.html - line 56
 
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Functions for the earlyHistory.html page starts here 
 // five simple functions to get text to fade into existence. uses element id's to get the text
+// had trouble trying to make one singular function 
 function fadeInText(textContainer1) {
     var textContainer1 = document.getElementById('textContainer1');
     textContainer1.classList.add('fade-in');
@@ -46,10 +47,10 @@ function fadeInText5(textContainer5) {
 }
 
 // function for one singular fade in text - cant currently get it working 
-//
-// function fadeInText(id) {
-// var textContainer = document.getElementById(id);
-//  textContainer.classList.add('fade-in');
+
+// function fadeInText(textContainer) {
+// var textContainer = document.getElementById('textContainer');
+// textContainer.classList.add('fade-in');
 //}
 //
 
@@ -63,8 +64,8 @@ let currentQuestionIndex = 0;
 // Array to store quiz questions data
 const questionsData = [];
 
-// function to display the current question
-// uses the template strings approach to create the radio buttons, and other general elements
+                    // function to display the current question
+                    // uses the template strings approach to create the radio buttons, and other general elements
 function displayQuestion() {
     // initialises two constants and sets them to different 
     const currentQuestionData = questionsData[currentQuestionIndex];
@@ -139,7 +140,72 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error loading quiz:', error));
 });
 
-// code for the celticQuiz.html ends here
+
+
+                // code for index.html slideshow starts here 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// Automatic slideshow
+let slideshowTimer; // Variable to hold the timer
+
+function startSlideshow() {
+    slideshowTimer = setInterval(function() {
+        plusSlides(1); // Move to the next slide
+    }, 2000); // Change slide every 2 seconds (2000 milliseconds)
+}
+
+function stopSlideshow() {
+    clearInterval(slideshowTimer); // Clear the timer to stop the slideshow
+}
+
+// Start the slideshow automatically when the page loads
+startSlideshow();
+
+// Pause the slideshow when the user interacts with the slideshow controls
+document.querySelectorAll('.prev, .next, .dot').forEach(function(elem) {
+    elem.addEventListener('click', function() {
+        stopSlideshow();
+    });
+});
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+// code for index.html slideshow ends here 
+
+// Screwed up API code below (ask in labs for help)
 
 const apiUrl = "www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c=Scotland&s=Soccer";
 
