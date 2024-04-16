@@ -349,3 +349,52 @@ li {
   margin-right: 130px;
   display: inline-flex;
 }
+
+                                        /* TEAMTRACKER PAGE CSS */
+
+/* styling for the whole r */
+.events-container {
+  display: flex;
+  flex-direction: column; /* turns the table into a simple column and helps with styling the event header (last five games played)*/
+  align-items: center; 
+  justify-content: center; 
+  margin: 20px auto; /* Center the container horizontally */
+  width: 80%; /* Set the width of the container */
+  max-width: 600px; /* Maximum width */
+  border: 1px solid #ccc; /* Border around the container */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Style the events header */
+.events-header {
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Bold font */
+  margin-bottom: 20px; /* Margin below the header */
+}
+
+/* Define styles for each event */
+.event {
+  margin-bottom: 30px; /* to give some more space between the events*/
+  text-align: center; 
+  border-bottom: 1px solid #ccc; /*  adds a small grey border-line to the bottom of each event to seperate them */
+  padding-bottom: 10px; /* adds padding below each event to allow space */
+  font-size: 20px
+}
+
+.events-Header, .event, .events-container {
+  font-family: Arial;
+}
+
+.event a{
+  /* used to take away colour and underlining of hyperlinked text within events-container */
+  color: inherit; 
+  text-decoration: none; 
+}
+
+/* Style team badges */
+.event img {
+  width: 50px; /* Set the width of the badge image */
+  height: auto; /* Maintain aspect ratio */
+}
