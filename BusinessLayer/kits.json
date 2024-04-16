@@ -1,4 +1,5 @@
 {
+  "name" : "kits",
   "kits": [
     {
       "image": "DataLayer/23:24-homekit.jpeg",
