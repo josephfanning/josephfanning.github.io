@@ -17,43 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('nav-fade-in');
 });
 
-// Functions for the earlyHistory.html page starts here 
-// five simple functions to get text to fade into existence. uses element id's to get the text
-// had trouble trying to make one singular function 
-function fadeInText(textContainer1) {
-    var textContainer1 = document.getElementById('textContainer1');
-    textContainer1.classList.add('fade-in');
-
-}
-
-function fadeInText2(textContainer2) {
-    var textContainer2 = document.getElementById('textContainer2');
-    textContainer2.classList.add('fade-in');
-}
-
-function fadeInText3(textContainer3) {
-    var textContainer3 = document.getElementById('textContainer3');
-    textContainer3.classList.add('fade-in');
-}
-
-function fadeInText4(textContainer4) {
-    var textContainer4 = document.getElementById('textContainer4');
-    textContainer4.classList.add('fade-in');
-}
-
-function fadeInText5(textContainer5) {
-    var textContainer5 = document.getElementById('textContainer5');
-    textContainer5.classList.add('fade-in');
-}
-
-// function for one singular fade in text - cant currently get it working 
-
-// function fadeInText(textContainer) {
-// var textContainer = document.getElementById('textContainer');
-// textContainer.classList.add('fade-in');
-//}
-//
-
 
 // code for the quiz shown on celticQuiz.html starts here 
 
@@ -64,8 +27,8 @@ let currentQuestionIndex = 0;
 // Array to store quiz questions data
 const questionsData = [];
 
-                    // function to display the current question
-                    // uses the template strings approach to create the radio buttons, and other general elements
+// function to display the current question
+// uses the template strings approach to create the radio buttons, and other general elements
 function displayQuestion() {
     // initialises two constants and sets them to different 
     const currentQuestionData = questionsData[currentQuestionIndex];
@@ -141,8 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-                // code for index.html slideshow starts here 
+// code for index.html slideshow starts here 
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -160,7 +122,7 @@ function currentSlide(n) {
 let slideshowTimer; // Variable to hold the timer
 
 function startSlideshow() {
-    slideshowTimer = setInterval(function() {
+    slideshowTimer = setInterval(function () {
         plusSlides(1); // Move to the next slide
     }, 2000); // Change slide every 2 seconds (2000 milliseconds)
 }
@@ -173,8 +135,8 @@ function stopSlideshow() {
 startSlideshow();
 
 // Pause the slideshow when the user interacts with the slideshow controls
-document.querySelectorAll('.prev, .next, .dot').forEach(function(elem) {
-    elem.addEventListener('click', function() {
+document.querySelectorAll('.prev, .next, .dot').forEach(function (elem) {
+    elem.addEventListener('click', function () {
         stopSlideshow();
     });
 });
@@ -183,67 +145,43 @@ function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 
-  
+// Screwed up API code below (ask in labs for help)
 
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    // Typical action to be performed when the document is ready:
+    parsedResponse = JSON.parse(xhttp.responseText)
+}
+};
+    xhttp.open("GET", "https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?t=Arsenal", true);
+    xhttp.send();
+    
+    // template --
 
-                            // Screwed up API code below (ask in labs for help)
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = "https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=Scotland&s=Soccer";
-
-    fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok");
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Update the DOM with the fetched data
-            displayLeagueInfo(data);
-        })
-        .catch(error => {
-            console.error("There was a problem with the fetch operation:", error);
-        });
-
-    // Function to display league info in the DOM
-    function displayLeagueInfo(data) {
-        const leagueData = data.leagues; // Assuming the data structure contains an array of leagues
-
-        // Select the element where you want to display the data
-        const dataContainer = document.getElementById('data');
-
-        // Create HTML elements to display the league info
-        const heading = document.createElement('h3');
-        heading.textContent = "Football Leagues in Scotland";
-
-        const list = document.createElement('ul');
-        leagueData.forEach(league => {
-            const listItem = document.createElement('li');
-            listItem.textContent = league.strLeague; // Assuming league object has a property for league name
-            list.appendChild(listItem);
-        });
-
-        // Append the elements to the data container
-        dataContainer.appendChild(heading);
-        dataContainer.appendChild(list);
-    }
-});
-
-                                
-
-
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function() {
+//    if (this.readyState == 4 && this.status == 200) {
+//        // Typical action to be performed when the document is ready:
+//        parsedResponse = JSON.parse(xhttp.responseText)
+//    }
+// };
+// xhttp.open("GET", "https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?t=Arsenal", true);
+// xhttp.send();
