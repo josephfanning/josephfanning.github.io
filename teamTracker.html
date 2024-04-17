@@ -38,17 +38,30 @@
     <h1 id="header_title"> <a> Team  Tracker </a> </h1>
 </header>
 
-<div>
-    <h3> Here you can find the last 5 home games played by Celtic and the current team roster.</h3>
-</div>
+
 
 <body>
 
+        <div class="div_body">
+            <h2> Team Information</h2>
+            
+            <p class="desc-align"> Here you can find up to date and current team information, like the team roster and last five games played<br>
+                <br> 
+                Some of the last five games have YouTube highlight clips you can view, make sure to view them!</p>
+        </div>
+
 <main>
+    <!-- uses javascript to use an API call to a database and dynamically display the last five results in order of most recent to the least recent. -->
     <div class="events-container">
         <div class="events-header">Last Five Games Played:</div>
         <div id="events"></div>
     </div>
+
+    <div id="teams"></div>
+<!--    <div class="roster-container">-->
+<!--        <div class="roster-header"> Current Team Roster:</div>-->
+<!--        <div id="roster"></div>-->
+<!--    </div>-->
 </main>
 
 <footer>

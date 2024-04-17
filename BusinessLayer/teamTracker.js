@@ -72,6 +72,64 @@ document.addEventListener('DOMContentLoaded', function() {
     xhttp.send();
 });
 
+                                    // for teams within the SPL
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // new instance of xhttp request
+    const xhttpTeams = new XMLHttpRequest();
+
+    xhttpTeams.onreadystatechange = function() { // when the xhttp is ready execute function
+        if (this.readyState == 4 && this.status == 200) {
+            const parsedResponse = JSON.parse(xhttpTeams.responseText); // parses xhttp file to parsedResponce in JSON format
+            const teams = parsedResponse.teams; // sets parsed responce to var teams 
+
+            // accesses html element teams from teamTracker.html by setting teamsContainer variable to teams div
+            const teamsContainer = document.getElementById("teams");
+
+            // Create HTML elements for each team and append them to the container
+            teams.forEach(function(team, index) { // for each team in the index...
+                if (index < 12) { // show only the first five teams
+
+                    // creates and adds a div to the teamTracker html page named teamDetails
+                    var teamDiv = document.createElement("div");
+                    teamDiv.classList.add("team");
+
+                    // constructs team details with the team name and badge
+                    var teamDetails = "<div>";
+
+                    // adds team name and badge to teamDetails div
+                    teamDetails += "<img src='" + team.strTeamBadge + "' alt='" + team.strTeam + "'> " +
+                        team.strTeam;
+
+                    // adds closing div to teamDetails
+                    teamDetails += "</div>";
+
+                    // appends everyting in teamDetails to teamDiv
+                    teamDiv.innerHTML = teamDetails;
+
+                    // then appends teamDiv to teamsContainer
+                    teamsContainer.appendChild(teamDiv);
+                }
+            });
+        }
+    };
+    // API call
+    xhttpTeams.open("GET", "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=Scottish%20Premier%20League", true);
+    xhttpTeams.send();
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // template --
 
 // var xhttp = new XMLHttpRequest();
