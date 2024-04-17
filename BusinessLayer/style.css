@@ -137,99 +137,7 @@ li {
   display: inline-flex;
 }
 
-/* used in earlyHistory.html for image styling */
-.image-Container1, .image-Container2, .image-Container3, .image-Container4, .image-Container5 {
-  display: flex;
-  float: left;
-  margin-left: 25px;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  height: 350px;
-  width: 300px;
-  cursor: pointer;
-  position: relative;
-}
-
-/* used in earlyHistory.html for text styling */
-.text-Container1, .text-Container2, .text-Container3, .text-Container4, .text-Container5 {
-  align-items: center;
-  opacity: 0;
-  transition: opacity 1.0s ease;
-  left: 650px;
-  /* margins are so high to be able to center the text properly within the sections with relation to the images */
-  margin-right: 200px;
-  margin-left: 400px;
-}
-/* used in earlyHistory.html for text styling to fade in text */
-.fade-in {
-  opacity: 1;
-}
-
-/* animation for the different pages to fade in */
-.nav-fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 0.5s ease-in forwards;
-}
-
-/* animation for the different pages to fade in */
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-                         /* quiz styling as shown on celticQuiz.html */
-
-
-/* Style the quiz container */
-#quizContainer {
-  
-}
-
-/* Style individual questions */
-.question {
-  text-align: center;
-}
-
-/* Style question number */
-.question h2 {
-  
-}
-
-/* Style question text */
-.question p {
-  text-align: center;
-}
-
-/* Style options list */
-.question ul {
-  
-}
-
-/* Style option labels */
-.question label {
-  margin: 10px 10px;
-  font-size: 24px;
-}
-
-/* Style submit button */
-.question button {
-  background-color: black;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.question button:hover {
-  background-color: grey;
-}
-
-                        /* Styling for the slideshow on the main page */
+                    /* Styling for the slideshow on the main page */
 
 * {box-sizing:border-box}
 
@@ -323,6 +231,101 @@ li {
   float: right;
   padding-left: 30px;
 }
+
+/* used in earlyHistory.html for image styling */
+.image-Container1, .image-Container2, .image-Container3, .image-Container4, .image-Container5 {
+  display: flex;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  height: 350px;
+  width: 300px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+/* animation for the different pages to fade in */
+.nav-fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+/* animation for the different pages to fade in */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* used in earlyHistory.html for text styling */
+.text-Container1, .text-Container2, .text-Container3, .text-Container4, .text-Container5 {
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1.0s ease;
+  left: 650px;
+  /* margins are so high to be able to center the text properly within the sections with relation to the images */
+  margin-right: 200px;
+  margin-left: 400px;
+}
+/* used in earlyHistory.html for text styling to fade in text */
+.fade-in {
+  opacity: 1;
+}
+
+                         /* quiz styling as shown on celticQuiz.html */
+
+
+/* Style the quiz container */
+#quizContainer {
+  
+}
+
+/* Style individual questions */
+.question {
+  text-align: center;
+}
+
+/* Style question number */
+.question h2 {
+  
+}
+
+/* Style question text */
+.question p {
+  text-align: center;
+}
+
+/* Style options list */
+.question ul {
+  
+}
+
+/* Style option labels */
+.question label {
+  margin: 10px 10px;
+  font-size: 24px;
+}
+
+/* Style submit button */
+.question button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.question button:hover {
+  background-color: grey;
+}
+
+
 
                                           /* KIT HISTORY PAGE CSS*/
 

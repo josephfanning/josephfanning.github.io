@@ -1,10 +1,4 @@
-// LOCATION OF SCRIPTS:
-// • nav bar - line 7
-// • earlyHistory.html - line 20
-// • CelticQuiz.html - line 56
-
-
-// Functions for the nav bar start here 
+// functions to open drawer and close drawer (nav bar)
 function openDrawer() {
     document.getElementById("myDrawer").style.width = "250px";
 }
@@ -13,9 +7,14 @@ function closeDrawer() {
     document.getElementById("myDrawer").style.width = "0";
 }
 
+// slides the nav bar out and in instead of popping it up by using the nav-fade-in CSS styling
 document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('nav-fade-in');
 });
+
+
+                                        // NEEDS FIXED
+
 
 // code for index.html slideshow starts here 
 let slideIndex = 1;

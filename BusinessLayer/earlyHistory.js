@@ -1,4 +1,4 @@
-// Functions for the nav bar start here 
+// functions to open drawer and close drawer (nav bar)
 function openDrawer() {
     document.getElementById("myDrawer").style.width = "250px";
 }
@@ -6,14 +6,14 @@ function openDrawer() {
 function closeDrawer() {
     document.getElementById("myDrawer").style.width = "0";
 }
-// slides the nav bar out and in instead of popping it up 
+// slides the nav bar out and in instead of popping it up by using the nav-fade-in CSS styling
 document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('nav-fade-in');
 });
 
 // Functions for the earlyHistory.html page starts here 
 // five simple functions to get text to fade into existence. uses element id's to get the text
-// had trouble trying to make one singular function 
+// had trouble trying to make one singular function out of it
 function fadeInText(textContainer1) {
     var textContainer1 = document.getElementById('textContainer1');
     textContainer1.classList.add('fade-in');

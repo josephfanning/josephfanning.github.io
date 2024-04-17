@@ -7,29 +7,27 @@ function closeDrawer() {
     document.getElementById("myDrawer").style.width = "0";
 }
 
+// slides the nav bar out and in instead of popping it up by using the nav-fade-in CSS styling
 document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('nav-fade-in');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.body.classList.add('nav-fade-in');
-});
-
-
-//   API code below - (write comments for this when finished!!!!)
+//   API code using xhttp request to get data from www.thesportsdb.com 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    var xhttp = new XMLHttpRequest(); // new instance of xhttp request 
 
+    // new instance of xhttp request
+    var xhttp = new XMLHttpRequest();  
+    
     xhttp.onreadystatechange = function() { // when the xhttp is ready execute function
         if (this.readyState == 4 && this.status == 200) {
-            var parsedResponse = JSON.parse(xhttp.responseText); // parses xhttp file to JSON format
-            var events = parsedResponse.results;
-            
-            var eventsContainer = document.getElementById("events"); // accesses html element events from teamTracker.html
+            const parsedResponse = JSON.parse(xhttp.responseText); // parses xhttp file to parsedResponce in JSON format
+            const events = parsedResponse.results; // sets parsed responce to var events 
+
+            // accesses html element events from teamTracker.html by setting eventsContainer variable to events div
+            const eventsContainer = document.getElementById("events"); 
 
             // Create HTML elements for each event and append them to the container
-            events.forEach(function(event, index) { // for each event...
+            events.forEach(function(event, index) { // for each event in the index...
                 if (index < 5) { // show only the last five events
                     
                     // creates and adds a div to the teamTracker html page named eventDetails
@@ -40,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     var eventDetails = "<div>";
                     
                     // checks if a video is avialble, if not then sets hyperlink to _blank (unclickable)
+                    // if video available, wraps text and badges in a hyperlink to the video on youtube.com 
                     if (event.strVideo !== null && event.strVideo !== "") {
                         eventDetails += "<a href='" + event.strVideo + "' target='_blank'>";
                     }
