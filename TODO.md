@@ -11,3 +11,6 @@ To do for Web CW:
 • Add more things to celticQuiz.html, looks very bleak at the moment<br>
 • change totalScore on celticQuiz.html to a var so its not block-scoped<br>
 • DO CSS for second tab on teamTracker.html<br>
+• Comment code for second tab on teamTracker.html<br>
+• make kitHistory.html page javascript file and use that for JSON + nav bar stuff<br>
+
