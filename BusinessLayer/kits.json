@@ -3,12 +3,12 @@
   "kits": [
     {
       "image": "DataLayer/23:24-homekit.jpg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2024"
     },
     {
       "image": "DataLayer/23:24-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/23:24-thirdkit.jpeg",
@@ -16,12 +16,12 @@
     },
     {
       "image": "DataLayer/22:23-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2023"
     },
     {
       "image": "DataLayer/22:23-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/22:23-thirdkit.jpeg",
@@ -29,12 +29,12 @@
     },
     {
       "image": "DataLayer/21:22-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2022"
     },
     {
       "image": "DataLayer/21:22-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/21:22-thirdkit.jpeg",
@@ -42,12 +42,12 @@
     },
     {
       "image": "DataLayer/20:21-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2021"
     },
     {
       "image": "DataLayer/20:21-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/20:21-thirdkit.jpeg",
@@ -55,12 +55,12 @@
     },
     {
       "image": "DataLayer/19:20-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2020"
     },
     {
       "image": "DataLayer/19:20-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/19:20-thirdkit.jpeg",
@@ -68,12 +68,12 @@
     },
     {
       "image": "DataLayer/18:19-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2019"
     },
     {
       "image": "DataLayer/18:19-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/18:19-thirdkit.jpeg",
@@ -81,12 +81,12 @@
     },
     {
       "image": "DataLayer/17:18-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2018"
     },
     {
       "image": "DataLayer/17:18-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/17:18-thirdkit.jpeg",
@@ -94,12 +94,12 @@
     },
     {
       "image": "DataLayer/16:17-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2017"
     },
     {
       "image": "DataLayer/16:17-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/16:17-thirdkit.jpeg",
@@ -107,12 +107,12 @@
     },
     {
       "image": "DataLayer/15:16-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2016"
     },
     {
       "image": "DataLayer/15:16-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/15:16-thirdkit.jpeg",
@@ -120,12 +120,12 @@
     },
     {
       "image": "DataLayer/14:15-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2015"
     },
     {
       "image": "DataLayer/14:15-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/14:15-thirdkit.jpeg",
@@ -133,12 +133,12 @@
     },
     {
       "image": "DataLayer/13:14-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2014"
     },
     {
       "image": "DataLayer/13:14-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/13:14-thirdkit.jpeg",
@@ -146,12 +146,12 @@
     },
     {
       "image": "DataLayer/12:13-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2013"
     },
     {
       "image": "DataLayer/12:13-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/12:13-thirdkit.jpeg",
@@ -159,12 +159,12 @@
     },
     {
       "image": "DataLayer/11:12-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2012"
     },
     {
       "image": "DataLayer/11:12-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/11:12-thirdkit.jpeg",
@@ -172,12 +172,12 @@
     },
     {
       "image": "DataLayer/10:11-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2011"
     },
     {
       "image": "DataLayer/10:11-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/10:11-thirdkit.jpeg",
@@ -185,12 +185,12 @@
     },
     {
       "image": "DataLayer/09:10-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2010"
     },
     {
       "image": "DataLayer/09:10-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/09:10-thirdkit.jpeg",
@@ -198,38 +198,38 @@
     },
     {
       "image": "DataLayer/08:09-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2009"
     },
     {
       "image": "DataLayer/08:09-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/08:09-GKkit.jpeg",
-      "description": "Goalkeeper Kit."
+      "description": "Goalkeeper Kit"
     },
     {
       "image": "DataLayer/07:08-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2008"
     },
     {
       "image": "DataLayer/07:08-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/07:08-CLkit.jpeg",
-      "description": "Champions League Kit."
+      "description": "Champions League Kit"
     },
     {
       "image": "DataLayer/06:07-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2007"
     },
     {
       "image": "DataLayer/06:07-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/06:07-thirdkit.jpeg",
@@ -237,12 +237,12 @@
     },
     {
       "image": "DataLayer/05:06-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2006"
     },
     {
       "image": "DataLayer/05:06-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/05:06-thirdkit.jpeg",
@@ -250,25 +250,25 @@
     },
     {
       "image": "DataLayer/04:05-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2005"
     },
     {
       "image": "DataLayer/04:05-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/04:05-GKkit.jpeg",
-      "description": "Goalkeepers Kit."
+      "description": "Goalkeepers Kit"
     },
     {
       "image": "DataLayer/03:04-homekit.jpeg",
-      "description": "Home Kit.",
+      "description": "Home Kit",
       "year": "2004"
     },
     {
       "image": "DataLayer/03:04-awaykit.jpeg",
-      "description": "Away Kit."
+      "description": "Away Kit"
     },
     {
       "image": "DataLayer/03:04-thirdkit.jpeg",
