@@ -437,12 +437,12 @@ li {
   border: 2px solid black;
   border-radius: 5px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 10px 10px 20px 10px;
   display: flex;
-  flex-direction: row; /* Display items horizontally */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  position: relative; /* Position relative for absolute positioning */
+  flex-direction: row; /* display the items horizontally */
+  align-items: center; /* center content vertically */
+  justify-content: center; /* centers content horizontally */
+  position: relative; 
 }
 
 /* styling for the images in the kit set */
