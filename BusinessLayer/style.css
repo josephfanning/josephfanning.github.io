@@ -62,7 +62,7 @@ footer {
 
 /* CSS styling for different text elements */
 
-h1, h2, h3, p, li, footer, label, input, button, .drawer, ul, li{
+h1, h2, h3, p, li, footer, label, input, button, .drawer, ul, li, .events-Header, .event, .events-container, .teams-header, .team, .teams-container{
   font-family: arial;
 }
 
@@ -140,6 +140,22 @@ li {
   cursor: pointer;
   margin-left: 10px;
   display: inline-flex;
+}
+
+/* animation for the different pages to fade in */
+.nav-fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+/* animation for the different pages to fade in instead of popping into existance*/
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
                     /* Styling for the slideshow on the main page */
@@ -237,6 +253,8 @@ li {
   padding-left: 30px;
 }
 
+                                            /* earlyHistory.html stuff
+
 /* used in earlyHistory.html for image styling */
 .image-Container1, .image-Container2, .image-Container3, .image-Container4, .image-Container5 {
   display: flex;
@@ -248,23 +266,6 @@ li {
   width: 300px;
   cursor: pointer;
   position: relative;
-}
-
-
-/* animation for the different pages to fade in */
-.nav-fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 0.5s ease-in forwards;
-}
-
-/* animation for the different pages to fade in */
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* used in earlyHistory.html for text styling */
@@ -281,10 +282,7 @@ li {
 .fade-in {
   opacity: 1;
 }
-
-                         /* quiz styling as shown on celticQuiz.html */
-
-
+                                              /* celticQuiz.html stuff */
 /* Style the quiz container */
 #quizContainer {
   
@@ -325,7 +323,7 @@ li {
   background-color: grey;
 }
 
-                                          /* KIT HISTORY PAGE CSS*/
+                                          /* KIT HISTORY PAGE CSS */ 
 
 /* Style for kit year */
 .kit-year {
@@ -353,7 +351,13 @@ li {
 
                                         /* TEAMTRACKER PAGE CSS */
 
-/* styling for the whole r */
+.container-wrapper {
+  border: 2px solid black;
+  box-sizing: content-box;
+  margin: 10px;
+}
+
+/* styling for the whole container that includes everything */
 .events-container {
   display: flex;
   flex-direction: column;
@@ -362,13 +366,11 @@ li {
   margin: 20px auto;
   width: 80%;
   max-width: 600px;
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+  overflow-y: auto; /* enables scrolling if content exceeds the container height */
 }
 
 /* Style the events header */
@@ -378,20 +380,26 @@ li {
   margin-bottom: 20px; /* Margin below the header */
 }
 
+/* container holding events styling */
+.events-container {
+  float: right;
+  width: calc(50% - 10px); /* sets the width for the events container */
+  margin-right: 100px; /* closes some between teams and events */
+}
+
 /* Define styles for each event */
 .event {
   margin-bottom: 30px; /* to give some more space between the events*/
-  text-align: center; 
-  border-bottom: 1px solid #ccc; /*  adds a small grey border-line to the bottom of each event to seperate them */
+  text-align: center;
+  border-bottom: 1px solid black; /*  adds a small grey border-line to the bottom of each event to seperate them */
   padding-bottom: 10px; /* adds padding below each event to allow space */
   font-size: 20px
 }
 
-
 .event a{
   /* used to take away colour and underlining of hyperlinked text within events-container */
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Style team badges */
@@ -400,39 +408,33 @@ li {
   height: auto; /* Maintain aspect ratio */
 }
 
-.events-container {
-  float: right;
-  width: calc(50% - 10px); /* Set width for the events container */
-  margin-right: 10px; /* Add some space between events and teams */
-}
-
-                                         /* Team stuff for teamTracker.html */
-
-.events-container,
-.teams-container {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.events-header,
-.teams-header {
+/* font sizes for teams header and the events header */
+.events-header, .teams-header {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Add any additional styles as needed */
-.events-Header, .event, .events-container, .teams-header, .team, .teams-container{
-  font-family: Arial;
+/* title text for teams div */
+.teams-header {
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Bold font */
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
+/* initialise margins for the team images */
+.team img {
+  margin-left: 60px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
                                           /* KitHistory styling page */
+
 /* most elements here are declared in kits.js as they were dynamically created when the JSON file was grabbed */
 
 .kit-set {
-  border: 1px solid #ccc;
+  border: 2px solid black;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -443,6 +445,7 @@ li {
   position: relative; /* Position relative for absolute positioning */
 }
 
+/* styling for the images in the kit set */
 .kit-set img {
   width: 150px; /* Set the width of each image */
   height: auto; /* Maintain aspect ratio */

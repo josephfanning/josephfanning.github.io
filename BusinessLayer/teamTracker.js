@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // new instance of xhttp request
     var xhttp = new XMLHttpRequest();  
     
-    xhttp.onreadystatechange = function() { // when the xhttp is ready execute function
+    xhttp.onreadystatechange = function()  { // when the xhttp is ready execute function
         if (this.readyState == 4 && this.status == 200) {
             const parsedResponse = JSON.parse(xhttp.responseText); // parses xhttp file to parsedResponce in JSON format
             const events = parsedResponse.results; // sets parsed responce to var events 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     xhttp.send();
 });
 
-                                    // for teams within the SPL
+                                    // for teams within the SPL - similar code as previous call
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -118,26 +118,3 @@ document.addEventListener('DOMContentLoaded', function() {
     xhttpTeams.open("GET", "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=Scottish%20Premier%20League", true);
     xhttpTeams.send();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-// template --
-
-// var xhttp = new XMLHttpRequest();
-// xhttp.onreadystatechange = function() {
-//    if (this.readyState == 4 && this.status == 200) {
-//        // Typical action to be performed when the document is ready:
-//        parsedResponse = JSON.parse(xhttp.responseText)
-//    }
-// };
-// xhttp.open("GET", "https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?t=Arsenal", true);
-// xhttp.send();
