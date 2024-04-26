@@ -8,12 +8,12 @@ function closeDrawer() {
 }
 
 // slides the nav bar out and in instead of popping it up by using the nav-fade-in CSS styling
-document.addEventListener('DOMContentLoaded', function () {
-    document.body.classList.add('nav-fade-in');
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("nav-fade-in");
 });
 
 //   API code using xhttp request to get data from www.thesportsdb.com 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     // new instance of xhttp request
     var xhttp = new XMLHttpRequest();  
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // checks if a video is avialble, if not then sets hyperlink to _blank (unclickable)
                     // if video available, wraps text and badges in a hyperlink to the video on youtube.com 
                     if (event.strVideo !== null && event.strVideo !== "") {
-                        eventDetails += "<a href='" + event.strVideo + "' target='_blank'>";
+                        eventDetails += "<a href='" + event.strVideo + "' target=_blank'>";
                     }
                     // adds badges of home and away team, date of match and scores to eventDetails div. 
                     // uses Strong styling technique because I only want the scores to be in bold
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                     // for teams within the SPL - similar code as previous call
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     // new instance of xhttp request
     const xhttpTeams = new XMLHttpRequest();
