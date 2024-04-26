@@ -1,3 +1,4 @@
+/* styling for the header element*/
 header {
   align-items: center; 
   font-size: 50px;
@@ -7,6 +8,7 @@ header {
   justify-content: space-between;
 }
 
+/*  styling for the main element (the same styling as div_body)*/
 main {
   background-color: floralwhite;
   margin-top: 10px;
@@ -26,7 +28,7 @@ main {
   text-decoration: none;
 }
 
-/* need to play around with this to get a nice colour gradient */
+
 /* involves a basic colour gradient to stylistically improve site */
 html{
   background: linear-gradient(to top, #11998e, #38ef7d);
@@ -61,7 +63,6 @@ footer {
 }
 
 /* CSS styling for different text elements */
-
 h1, h2, h3, p, li, footer, label, input, button, .drawer, ul, li, .events-Header, .event, .events-container, .teams-header, .team, .teams-container{
   font-family: arial;
 }
@@ -120,7 +121,7 @@ li {
   transition: 0.3s;
 }
 
-/* Change the color of links when hovering over hrefs in the nav bar */
+/* used to change the color of links when hovering over links in the nav bar */
 .drawer a:hover { 
   color: #0AA851;
 }
@@ -158,101 +159,6 @@ li {
   }
 }
 
-                    /* Styling for the slideshow on the main page */
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.slideshow-container {
-  float: right;
-  padding-left: 30px;
-}
-
                                             /* earlyHistory.html stuff
 
 /* used in earlyHistory.html for image styling */
@@ -283,33 +189,26 @@ li {
   opacity: 1;
 }
                                               /* celticQuiz.html stuff */
-/* Style the quiz container */
-#quizContainer {
-  
-}
 
-/* Style individual questions */
+
+/* styling for individual questions */
 .question {
   text-align: center;
 }
 
-/* Style question text */
+/* styling for question text */
 .question p {
   text-align: center;
 }
 
-/* Style options list */
-.question ul {
-  
-}
 
-/* Style option labels */
+/* styling for option labels */
 .question label {
   margin: 10px 10px;
   font-size: 24px;
 }
 
-/* Style submit button */
+/* styling for the submit button */
 .question button {
   background-color: black;
   color: #fff;
@@ -323,15 +222,14 @@ li {
   background-color: grey;
 }
 
-                                          /* KIT HISTORY PAGE CSS */ 
-
-/* Style for kit year */
+                                          /* KIT HISTORY PAGE CSS */
+/* styling for kit year */
 .kit-year {
   margin-left: 20px;
   display: block;
 }
 
-/* Style for kit images */
+/* styling for kit images */
 .kit-images {
   width: 250px;
   height: 200px;
@@ -341,7 +239,7 @@ li {
   display: block;
 }
 
-/* Style for kit description */
+/* styling for kit description */
 .kit-desc {
   clear: right; /* Clears the float so the text appears below the images */
   text-align: center;
@@ -351,6 +249,7 @@ li {
 
                                         /* TEAMTRACKER PAGE CSS */
 
+/* styling for the wrapper containing the events-contsainer and teams-container (used to make a border box around both)*/
 .container-wrapper {
   border: 2px solid black;
   box-sizing: content-box;
@@ -373,7 +272,7 @@ li {
   overflow-y: auto; /* enables scrolling if content exceeds the container height */
 }
 
-/* Style the events header */
+/* styling for the events header */
 .events-header {
   font-size: 24px; /* Adjust font size */
   font-weight: bold; /* Bold font */
@@ -387,7 +286,7 @@ li {
   margin-right: 100px; /* closes some between teams and events */
 }
 
-/* Define styles for each event */
+/* styling for each event */
 .event {
   margin-bottom: 30px; /* to give some more space between the events*/
   text-align: center;
@@ -396,13 +295,14 @@ li {
   font-size: 20px
 }
 
+/* for hyperlink colour removal */
 .event a{
   /* used to take away colour and underlining of hyperlinked text within events-container */
   color: inherit;
   text-decoration: none;
 }
 
-/* Style team badges */
+/* styling for team badges */
 .event img, .team img {
   width: 50px; /* Set the width of the badge image */
   height: auto; /* Maintain aspect ratio */
@@ -432,7 +332,6 @@ li {
                                           /* KitHistory styling page */
 
 /* most elements here are declared in kits.js as they were dynamically created when the JSON file was grabbed */
-
 .kit-set {
   border: 2px solid black;
   border-radius: 5px;
